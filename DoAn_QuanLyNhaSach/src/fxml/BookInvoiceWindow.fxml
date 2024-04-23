@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1376.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="272.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane prefHeight="59.0" prefWidth="272.0">
+               <children>
+                  <FontAwesomeIcon glyphName="SHOPPING_CART" layoutX="246.0" layoutY="37.0" size="15" />
+                  <FontAwesomeIcon glyphName="BOOK" layoutX="225.0" layoutY="28.0" size="30" />
+                  <Label layoutX="14.0" layoutY="22.0" prefHeight="62.0" prefWidth="231.0" text="BOOKSTORE">
+                     <font>
+                        <Font name="Poppins Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="84.0" prefWidth="272.0">
+               <children>
+                  <AnchorPane layoutX="27.0" layoutY="19.0" prefHeight="44.0" prefWidth="231.0">
+                     <children>
+                        <Label layoutX="71.0" layoutY="11.0" text="Trang chủ" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HOME" layoutX="15.0" layoutY="30.0" size="25" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="pane-selected" />
+                        <String fx:value="light-radius-border" />
+                     </styleClass>
+                  </AnchorPane>
+                  <Pane layoutX="-2.0" layoutY="19.0" prefHeight="44.0" prefWidth="5.0">
+                     <styleClass>
+                        <String fx:value="pane-selected" />
+                        <String fx:value="light-radius-border" />
+                     </styleClass>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="84.0" prefWidth="272.0">
+               <children>
+                  <AnchorPane layoutX="27.0" layoutY="19.0" prefHeight="44.0" prefWidth="231.0" styleClass="light-radius-border">
+                     <children>
+                        <Label layoutX="71.0" layoutY="11.0" text="Sách" textAlignment="CENTER" textFill="#848484">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIcon fill="#848484" glyphName="BOOK" layoutX="15.0" layoutY="30.0" size="25" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="84.0" prefWidth="272.0">
+               <children>
+                  <AnchorPane layoutX="27.0" layoutY="19.0" prefHeight="44.0" prefWidth="231.0" styleClass="light-radius-border">
+                     <children>
+                        <Label layoutX="71.0" layoutY="11.0" text="Khách hàng" textAlignment="CENTER" textFill="#848484">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIcon fill="#848484" glyphName="GROUP" layoutX="15.0" layoutY="30.0" size="25" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="84.0" prefWidth="272.0">
+               <children>
+                  <AnchorPane layoutX="27.0" layoutY="19.0" prefHeight="44.0" prefWidth="231.0" styleClass="light-radius-border">
+                     <children>
+                        <Label layoutX="71.0" layoutY="11.0" text="Tài khoản" textAlignment="CENTER" textFill="#848484">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIcon fill="#848484" glyphName="USER" layoutX="15.0" layoutY="30.0" size="25" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="84.0" prefWidth="272.0">
+               <children>
+                  <AnchorPane layoutX="27.0" layoutY="19.0" prefHeight="44.0" prefWidth="231.0" styleClass="light-radius-border">
+                     <children>
+                        <Label layoutX="71.0" layoutY="11.0" text="Cài đặt" textAlignment="CENTER" textFill="#848484">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIcon fill="#848484" glyphName="GEAR" layoutX="15.0" layoutY="30.0" size="25" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="255.0" prefWidth="272.0">
+               <children>
+                  <Label layoutX="88.0" layoutY="184.0" text="Dịp Hưng Thịnh">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="DODGERBLUE" layoutX="46.0" layoutY="206.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="88.0" layoutY="206.0" text="Người dùng" />
+                  <FontAwesomeIcon glyphName="USER" layoutX="211.0" layoutY="201.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="200.0" prefWidth="1104.0" style="-fx-background-color: #FDF9F4;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1104.0" style="-fx-background-color: white;">
+               <children>
+                  <Label text="Hóa đơn">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+                  <Pane prefHeight="62.0" prefWidth="554.0" />
+                  <AnchorPane prefHeight="60.0" prefWidth="283.0">
+                     <children>
+                        <TextField alignment="CENTER" layoutX="17.0" layoutY="15.0" prefHeight="27.0" prefWidth="251.0" promptText="Search" style="-fx-border-color: lightgrey; -fx-border-radius: 15; -fx-background-color: #F5F5F6; -fx-background-radius: 15;">
+                           <font>
+                              <Font name="Cambria" size="16.0" />
+                           </font>
+                        </TextField>
+                        <Circle fill="#8b5afe" layoutX="252.0" layoutY="31.0" radius="16.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+                        <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" layoutX="243.0" layoutY="38.0" selectionEnd="1" size="20" textAlignment="CENTER" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane layoutX="10.0" layoutY="230.0" prefHeight="512.0" prefWidth="1084.0" style="-fx-background-color: white;" styleClass="light-radius-box-border" AnchorPane.bottomAnchor="10.0">
+               <children>
+                  <GridPane layoutX="10.0" layoutY="125.0" prefHeight="80.0" prefWidth="1064.0" style="-fx-background-color: white;" styleClass="light-radius-box-border">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints maxHeight="184.60001220703126" minHeight="10.0" prefHeight="184.60001220703126" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="450.0" style="-fx-background-color: white;" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Tên đầu sách:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="25.0" />
+                                 </padding>
+                              </Label>
+                              <ComboBox prefWidth="150.0" style="-fx-border-radius: 4;" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="58.0" prefWidth="607.0">
+                                 <children>
+                                    <Label prefHeight="24.0" prefWidth="147.0" text="Số lượng:">
+                                       <padding>
+                                          <Insets right="55.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Arial Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </GridPane>
+                  <AnchorPane layoutX="10.0" layoutY="230.0" prefHeight="274.0" prefWidth="944.0" styleClass="light-radius-box-border" AnchorPane.bottomAnchor="10.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="8.0" prefHeight="60.0" prefWidth="515.0">
+                           <children>
+                              <Label text="Ngày lập:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <DatePicker />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="106.0" layoutY="238.0" prefHeight="15.0" prefWidth="318.0">
+                           <children>
+                              <Label text="Số tiền trả:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="50.0" />
+                                 </padding>
+                              </Label>
+                              <TextField />
+                           </children>
+                        </HBox>
+                        <ListView layoutX="22.0" layoutY="60.0" prefHeight="169.0" prefWidth="904.0" styleClass="light-radius-box-border">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets bottom="40.0" />
+                           </opaqueInsets>
+                        </ListView>
+                        <HBox alignment="CENTER" layoutX="629.0" layoutY="238.0" prefHeight="15.0" prefWidth="318.0">
+                           <children>
+                              <Label text="Tổng tiền:">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="50.0" />
+                                 </padding>
+                              </Label>
+                              <TextField />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="71.0" layoutY="215.0" style="-fx-background-color: white;" text="Phiếu nhập sách">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" layoutX="992.0" layoutY="226.0" prefHeight="274.0" prefWidth="66.0" styleClass="light-radius-box-border">
+                     <children>
+                        <FontAwesomeIcon fill="#5a9e93" glyphName="FILE_TEXT" size="50" stroke="#d77f7f" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="39.96668720245361" />
+                        <Pane prefHeight="10.0" prefWidth="40.0" />
+                        <FontAwesomeIcon fill="#636e3f" glyphName="SAVE" selectionFill="#ff7d7d" size="50" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="39.96668720245361" />
+                        <Pane prefHeight="10.0" prefWidth="40.0" />
+                        <FontAwesomeIcon fill="#995252" glyphName="BOOK" size="50" stroke="BLACK" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="39.96668720245361" />
+                        <Pane prefHeight="10.0" prefWidth="40.0" />
+                        <FontAwesomeIcon fill="#9fc999" glyphName="PLUS_CIRCLE" size="50" stroke="BLACK" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="39.96668720245361" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="71.0" layoutY="114.0" style="-fx-background-color: white;" text="Thông tin sách">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="95.0" prefWidth="1062.0" styleClass="light-radius-box-border">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                     <children>
+                        <ComboBox layoutX="269.0" layoutY="35.0" prefHeight="26.0" prefWidth="150.0" />
+                        <Label layoutX="124.0" layoutY="34.0" text="Số điện thoại:">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="71.0" layoutY="1.0" style="-fx-background-color: white;" text="Thông tin khách hàng">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="10.0" layoutY="75.0" prefHeight="138.0" prefWidth="974.0" style="-fx-background-color: white;" styleClass="light-radius-box-border">
+               <children>
+                  <GridPane alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="118.0" prefWidth="954.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="159.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="159.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Circle fill="#8398ac" layoutX="80.0" layoutY="54.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="FILE_TEXT" layoutX="64.0" layoutY="66.0" size="40" text="" />
+                              <Label layoutX="51.0" layoutY="97.0" text="Nhập sách" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <Circle fill="#5c8cb9" layoutX="80.0" layoutY="54.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="MONEY" layoutX="58.0" layoutY="68.0" size="40" />
+                              <Label layoutX="58.0" layoutY="97.0" text="Thu tiền" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="109.0" prefWidth="159.0" GridPane.columnIndex="2">
+                           <children>
+                              <Circle fill="#88a7c4" layoutX="80.0" layoutY="54.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="LINE_CHART" layoutX="59.0" layoutY="68.0" size="40" />
+                              <Label layoutX="58.0" layoutY="97.0" text="Báo cáo" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+                           <children>
+                              <Circle fill="#88a7c4" layoutX="72.0" layoutY="54.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" layoutX="53.0" layoutY="68.0" size="40" />
+                              <Label layoutX="47.0" layoutY="97.0" text="Tìm kiếm" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4">
+                           <children>
+                              <Circle fill="#88a7c4" layoutX="69.0" layoutY="54.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="selected-circle" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="DOLLAR" layoutX="88.0" layoutY="76.0" size="15" wrappingWidth="19.200016021728516" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="FILE_TEXT" layoutX="52.0" layoutY="65.0" size="40" text="" />
+                              <Label layoutX="47.0" layoutY="97.0" text="Hóa đơn">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5">
+                           <children>
+                              <Circle fill="#88a7c4" layoutX="80.0" layoutY="54.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="REPEAT" layoutX="64.0" layoutY="68.0" size="40" />
+                              <Label layoutX="56.0" layoutY="97.0" text="Cập nhật" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
